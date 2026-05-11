@@ -1,0 +1,38 @@
+@import "tailwindcss";
+/* =========================
+   THEME VARIABLES
+========================= */
+
+:root {
+  --bg-main: #06080f;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --text-main: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.7);
+  --border-main: rgba(255, 255, 255, 0.1);
+  --user-msg-bg: rgba(59, 130, 246, 0.1);
+  --user-msg-border: rgba(59, 130, 246, 0.3);
+}
+
+/* =========================
+   LIGHT MODE
+========================= */
+body.light {
+  --bg-main: #f5f7fb;
+  --bg-card: rgba(255, 255, 255, 0.4);
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --border-main: rgba(0, 0, 0, 0.1);
+  --user-msg-bg: rgba(59, 130, 246, 0.15);
+  --user-msg-border: rgba(59, 130, 246, 0.4);
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
